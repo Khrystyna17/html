@@ -31,17 +31,34 @@
     </header>
     <main>
         <h2 id="products">Products</h2>
-        <div class="products-carousel">
-            <div class="images">
-                <img class="image1" src="" alt="Carousel image">
-                <img class="image2" src="" alt="Carousel image">
-                <img class="image3" src="" alt="Carousel image">
+        <div>
+            <div class="products-carousel">
+                <div class="images">
+                    <img class="image1" src="" alt="Carousel image">
+                    <img class="image2" src="" alt="Carousel image">
+                    <img class="image3" src="" alt="Carousel image">
+                </div>
+                <button class="next">Next</button>
+                <button class="prev">Previous</button>
             </div>
-            <button class="next">Next</button>
-            <button class="prev">Previous</button>
+            <button class="sort-asc button card-button active">Sort by price Ascending</button>
+            <button class="sort-desc button card-button">Sort by price Descending</button>
         </div>
-        <button class="sort-asc button card-button active">Sort by price Ascending</button>
-        <button class="sort-desc button card-button">Sort by price Descending</button>
+        <div class="exchange-rate">
+            <label> 
+                Convert from:
+                <input type="text" class="curr-from" value="UAH">
+            </label>
+            <label>
+                Convert to:
+                <input type="text" class="curr-to" value="USD">
+            </label>
+            <label>
+                Rate:
+                <input type="text" class="rate" readonly>
+            </label>
+            <button class="show-rate">Show rate</button>
+        </div>
         <div class="product-list"></div>
     </main>
     <footer>
@@ -66,6 +83,7 @@
     <script src="js/index.js"></script>
     <script src="js/products.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="js/currency-converter.js"></script>
 </body>
 
 </html>
